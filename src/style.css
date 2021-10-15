@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    margin: 0;
+    font-family: 'KoHo', sans-serif;
+    
+    background: linear-gradient(120deg, #84CEF8 40%, rgba(194, 196, 198, 0) 100%), #C4C4C4;
+    background-size: 200% 200%;
+    -webkit-animation: gradient 10s ease infinite;
+	  animation: gradient 10s ease infinite;
+}
+
+#weather{
+    display: flex;
+    min-height: 100vh;
+    height: max-content;
+    margin: auto;
+
+    background-color: rgba(255, 255, 255, 0.2); 
+    /* background: linear-gradient(-45deg, #48cae4, #0096c7, #00b4d8, #0077b6);
+	  background-size: 400% 400%;
+  	-webkit-animation: gradient 10s ease infinite;
+	  animation: gradient 10s ease infinite; */
+}
+
+#card{
+    padding: 1rem 2rem 2rem 2rem;
+    margin: 0rem auto;
+    border-radius: 0.3rem;
+    height: 15rem;
+
+    /* background-color: rgba(255, 255, 255, 0.2); */
+
+    text-align: center;
+}
+
+.realTime{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.realTime h1{
+    font-size: 4rem;
+    color: #fff;
+}
+
+.realTime div{
+  margin-left: 1rem;
+}
+
+.realTime h3{
+    color: #fff;
+    font-weight: 700;
+}
+
+.realTime p{
+    color: #fff;
+    font-weight: 400;
+}
+
+/*         Table        */
+
+.forecast{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.forecastTable{
+  width: 100%;
+  margin: auto;
+  border-spacing: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.forecastTable thead tr{
+  color: #fff;
+  justify-content: space-between;
+}
+
+.forecastTable tbody{
+  color: #fff;
+}
+
+.forecastTable tbody tr td:first-child{
+  font-weight: 700;
+}
+
+
+/*         Bg animation        */
+@-webkit-keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+  
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}

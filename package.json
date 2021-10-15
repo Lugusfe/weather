@@ -1,0 +1,29 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Aplicação simples de clima utilizando a [WeatherAPI](https://www.weatherapi.com/)",
+  "main": "src/electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npx electron-packager . --icon=src/assets/sun.icns --out=packages",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lugusfe/weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lugusfe/weather/issues"
+  },
+  "homepage": "https://github.com/Lugusfe/weather#readme",
+  "devDependencies": {
+    "electron": "^15.1.1",
+    "electron-packager": "^15.4.0"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
